@@ -1,0 +1,9 @@
+{
+	"name": "IAB353-test",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "789106a6-4501-4078-a936-d27c9c6504a4",
+		"tenantId": "dc0b52a3-68c5-44f7-881d-9383d8850b96"
+	}
+}

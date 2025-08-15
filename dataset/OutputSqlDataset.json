@@ -1,0 +1,54 @@
+{
+	"name": "OutputSqlDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "salary_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "job_id",
+				"type": "varchar"
+			},
+			{
+				"name": "max_salary",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "med_salary",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "min_salary",
+				"type": "float",
+				"precision": 15
+			},
+			{
+				"name": "pay_period",
+				"type": "varchar"
+			},
+			{
+				"name": "currency",
+				"type": "varchar"
+			},
+			{
+				"name": "compensation_type",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Salaries"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
