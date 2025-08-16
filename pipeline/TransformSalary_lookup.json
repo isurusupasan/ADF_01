@@ -28,7 +28,7 @@
 				}
 			},
 			{
-				"name": "ForEach_PayPeriod",
+				"name": "ForEach_PayPeriod_1",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -47,12 +47,13 @@
 					"batchCount": 1,
 					"activities": [
 						{
-							"name": "If_ShouldProcessPeriod",
+							"name": "If_ShouldProcessPeriod_1",
 							"type": "IfCondition",
 							"dependsOn": [],
+							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@greater(length(string(item().pay_period)), 0)\n",
+									"value": "@greater(length(string(item().pay_period)), 0)",
 									"type": "Expression"
 								},
 								"ifFalseActivities": [
@@ -82,7 +83,7 @@
 								],
 								"ifTrueActivities": [
 									{
-										"name": "DF_Transform_ByPayPeriod",
+										"name": "DF_Transform_ByPayPeriod_1",
 										"type": "ExecuteDataFlow",
 										"dependsOn": [],
 										"policy": {
