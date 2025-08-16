@@ -32,7 +32,7 @@
 			],
 			"scriptLines": [
 				"parameters{",
-				"     pPayPeriod as string (\"null\")",
+				"     pPayPeriod as string",
 				"}",
 				"source(output(",
 				"          salary_id as integer,",
